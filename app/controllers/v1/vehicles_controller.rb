@@ -1,5 +1,6 @@
 class V1::VehiclesController < ApplicationController
   before_action :set_vehicle, only: [:show, :update, :destroy]
+	before_action :authorized
 
   # GET /vehicles
   def index
