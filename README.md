@@ -37,7 +37,7 @@ curl -X POST \
 }
 ````
 
-#### Register
+### Register
 This API endpoint is used for registering new users to the system.
 #### Endpoint
 `https://vehicle-booking-api.herokuapp.com/v1/users`
@@ -63,7 +63,7 @@ curl -X POST \
     "token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozNX0.nLY4f5bGd_E9dJcpp-p1YdDcbaKasVj9hrP3zlfCkdE"
 }
 ````
-#### Vehicles
+### Vehicles
 This is the API endpoint related to vehicles in the system.
 #### Endpoint
 `https://vehicle-booking-api.herokuapp.com/v1/vehicles`
@@ -98,7 +98,7 @@ curl -X GET \
     }
 ]
 ````
-#### Appointments
+### Appointments
 This is the API endpoint related to appointments (bookings) in the system.
 #### Endpoint
 `https://vehicle-booking-api.herokuapp.com/v1/appointments`
