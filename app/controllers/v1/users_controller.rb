@@ -1,5 +1,7 @@
 class V1::UsersController < ApplicationController
+  before_action :authorized, only: [:auto_login]
 
+  # REGISTER
   def create
     @user = User.create(user_params)
     if @user.valid?
@@ -10,6 +12,7 @@ class V1::UsersController < ApplicationController
     end
   end
 
+  # LOGGING IN
   def login
     @user = User.find_by(username: params[:username])
 
@@ -19,6 +22,10 @@ class V1::UsersController < ApplicationController
     else
       render json: { error: 'Invalid username or password' }
     end
+  end
+
+  def auto_login
+    render json: @user
   end
 
   private
