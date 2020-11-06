@@ -19,7 +19,7 @@ class V1::AppointmentsController < ApplicationController
     @appointment = Appointment.new(appointment_params)
 
     if @appointment.save
-      render json: @appointment, status: :created, location: @appointment
+      render json: @appointment, status: :created
     else
       render json: @appointment.errors, status: :unprocessable_entity
     end
