@@ -7,6 +7,7 @@ RSpec.describe Vehicle, :type => :model do
     it { should validate_presence_of(:model) }
 		it { should validate_presence_of(:transmission) }
     it { should validate_presence_of(:fee) }
+    it { should validate_presence_of(:photo) }
   end
 
 end
