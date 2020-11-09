@@ -208,6 +208,8 @@ Kindly give this repository a ⭐️ if you like this project!
 
 - Project specifications by [Microverse](https://www.microverse.org).
 
+- Images downloaded from [U.S. News](https://cars.usnews.com/).
+
 ## 📝 License
 
 This project is licensed under the MIT License.
